@@ -253,8 +253,14 @@ The build process relies on `PYLON_ROOT` pointing to the Basler pylon install di
 export PYLON_ROOT=/opt/pylon
 ```
 
-Then proceed to configure the project. Check `meson_options.txt` for a
-list of configuration options. On Debian-based systems, make sure you
+Clone a local copy of the gst-plugin-pylon.git repository
+```bash
+git clone https://github.com/basler/gst-plugin-pylon.git
+cd gst-plugin-pylon
+```
+
+Then proceed to configure the project. Check `meson_options.txt` in the gst-plugin-pylon 
+folder for a list of configuration options. On Debian-based systems, make sure you
 configure the project as:
 
 ```bash
